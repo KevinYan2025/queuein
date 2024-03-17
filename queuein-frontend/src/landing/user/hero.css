@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+/* Path: queuein-frontend/src/index.css */
+body {
+  background-color:#5AA9E6;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin: 0;
+  }
+
+.hero {
+  align-items: center;
+  justify-content: center;
+}
+  
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-wrapper > * {
+  margin: 10px; /* Adjust this value to your liking */
+  border-color: #5AA9E6;
+}
+
+.inputbox{
+  border-radius: 100px;
+  background: #FFF;
+  width: 640px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+.inputbox::placeholder {
+  padding-left: 30px; /* Adjust this value to your liking */
+}
+
+.enterBtn{
+  width: 176px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: #FFCA0A;
+  color: #000;
+  text-align: center;
+  font-family: "Seymour One";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  justify-content: center;
+  align-items: center;
+}
+
+.cyoBtn{
+  border-radius: 100px;
+  background: #FFCA0A;
+  width: 640px;
+  height: 81px;
+  flex-shrink: 0;
+}
+
+.cyoText{
+color: #FFFCFC;
+text-align: center;
+font-family: "Seymour One";
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 83.333% */
+}
+
+.title{
+  font-family: 'Knewave', cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+}

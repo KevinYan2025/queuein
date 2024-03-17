@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../index.css';
+import './hero.css';
 
 
 const Hero = () => {
@@ -8,9 +8,10 @@ const Hero = () => {
       <h1 className="title">V-Queue !</h1>
       <div className="input-wrapper">
         <input type="text" className="inputbox" placeholder="Enter 6 digit pin" />
+        <input type="text" className="inputbox" placeholder="Enter name" />
         <button className="enterBtn">Enter</button>
+        <button className="cyoBtn cyoText" > Create your own queue</button>
     </div>
-    <button className="cyoBtn cyoText" > Create your own queue</button>
     </div>
    
   );

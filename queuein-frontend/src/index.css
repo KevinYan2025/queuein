@@ -1,0 +1,160 @@
+.pinBox{
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 293.322px;
+    height: 69.301px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #E4AFFF;
+}
+
+.pinBoxText{
+    color: #F9F9F9;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 83.333% */
+    letter-spacing: 5.76px;    
+}
+
+.rankBoxWapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+.topUserBoxWapper{
+    width: '100%';
+    height: '100%';
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.userBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 84px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFCA0A; 
+    margin-top: 50px;   
+}
+.userBoxText{
+    color: #F9F9F9;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 62.5% */
+    letter-spacing: 7.68px; 
+}
+
+.queueTop{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 120px;
+    left:0;
+    top: 45px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #E4AFFF;
+}
+
+.queueTopText{
+    width: 677px;
+    height: 20px;
+    position:absolute;
+    color: #F9F9F9;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 46.875% */
+    letter-spacing: 10.24px;
+    word-wrap: 'break-word';
+}
+
+.nextPersonBox{
+    position: absolute;
+    top: 45px;
+    left: 95px;
+    width: 186px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFE45E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nextPersonBoxText{
+    color: #000;
+    text-align: center;
+    font-family: Knewave;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120px; /* 600% */
+    word-wrap: break-word;
+}
+
+.otherUserBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 84px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #E4AFFF; 
+    margin-top: 50px;   
+}
+.otherUserBoxText{
+    color: #F9F9F9;
+    text-align: center;
+    font-family: "Seymour One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 62.5% */
+    letter-spacing: 7.68px; 
+}
+
+.message{
+    color: #FFF;
+    text-align: center;
+    font-family: Knewave;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120px; /* 300% */
+}
+
+.purple-text{
+    color: #E4AFFF;
+}
+

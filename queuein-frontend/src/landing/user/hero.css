@@ -81,3 +81,15 @@ line-height: 30px; /* 83.333% */
   margin-bottom: 1rem;
   margin-top: 5rem;
 }
+
+
+.userQueue{
+  font-family: "Seymour One";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 83.333% */
+  color: #FFFCFC;
+  text-align: center;
+  margin-top: 5rem;
+}

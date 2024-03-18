@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import Hero from './landing/user/hero.jsx'
+import UserQueue from './landing/user/userQueue.jsx'
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <div className="app">
-      <Hero />
+      <div>
+      {/* <Hero /> */}
       {/* Other components */}
+      <UserQueue />
     </div>
-  
     </>
   )
 }

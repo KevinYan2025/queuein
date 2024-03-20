@@ -1,14 +1,13 @@
 import React from 'react';
 import '../index.css';
 
-const Pin = () => {
+const Pin = (props) => {
     return (
         <div className="pinBox" >
             <div className="pinBoxText">
-                <h1>123456</h1>
+                <h1>{props.queueID}</h1>
             </div>
         </div>
-     
     );
 }
 

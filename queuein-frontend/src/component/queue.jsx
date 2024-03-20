@@ -1,7 +1,7 @@
 import React from 'react';
 import '../index.css';
 
-const Queue = () => {
+const Queue = ({queueInfo}) => {
     return (
     <div className='rankBoxWapper'>
         <div className='topUserBoxWapper'>
@@ -25,8 +25,6 @@ const Queue = () => {
         There are <span className="purple-text">2</span> people ahead 
         </div>  
     </div>
- 
-
 
     )
 }

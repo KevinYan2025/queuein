@@ -5,12 +5,14 @@ import com.queuein.queueinbackend.model.Queue;
 import com.queuein.queueinbackend.model.QueueRepository;
 import com.queuein.queueinbackend.model.User;
 import com.queuein.queueinbackend.model.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 public class ApiController {
+
     private final QueueRepository queueRepository;
     private final UserRepository userRepository;
 

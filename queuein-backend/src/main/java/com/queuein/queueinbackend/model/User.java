@@ -1,6 +1,7 @@
 package com.queuein.queueinbackend.model;
 
 import jakarta.persistence.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name = "queueUser") //user is reserved in mysql, therefore I am use queueUser instead

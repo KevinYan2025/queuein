@@ -14,13 +14,12 @@ public class User {
     @ManyToOne
     @JoinColumn(name = "queue_id")
     private Queue queue;
-    private int position;
 
-    public User( Boolean isQueueOwner, String name, Queue queue,int position) {
+
+    public User( Boolean isQueueOwner, String name, Queue queue) {
         this.isQueueOwner = isQueueOwner;
         this.name = name;
         this.queue = queue;
-        this.position = position;
     }
 
     public User() {

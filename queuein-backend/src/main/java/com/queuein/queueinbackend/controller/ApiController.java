@@ -1,5 +1,6 @@
 package com.queuein.queueinbackend.controller;
 
+import ch.qos.logback.classic.spi.IThrowableProxy;
 import com.queuein.queueinbackend.model.Queue;
 import com.queuein.queueinbackend.model.QueueRepository;
 import com.queuein.queueinbackend.model.User;
@@ -18,20 +19,26 @@ public class ApiController {
         this.userRepository = userRepository;
     }
 
-    @PostMapping(path ="/createUser")
-    public User createUser(@RequestBody String name) {
-        Queue queue = queueRepository.findById(533297).orElse(queueRepository.save(new Queue()));
-        User user = new User(false,name,queue,1);
-        return userRepository.save(user);
+    @PostMapping(path ="/createQueue")
+    public Queue createQueue(@RequestParam String username, @RequestParam String queueName) {
+        Queue queue = new Queue(queueName);
+        User queueOwner = new User(true,username,queue);
+        queue.getQueueOwners().add(queueOwner);
+        queueRepository.save(queue);
+        userRepository.save(queueOwner);
+        return queue;
+    }
+    @PostMapping(path ="createAndAddUserToQueue")
+    public Queue addUserToQueue(@RequestParam Integer queueID,@RequestParam String name){
+            Queue queue = queueRepository.findById(queueID).orElseThrow();
+            User user = new User(false, name, queue);
+            queue.getUsers().addFirst(user);
+            return queueRepository.save(queue);
     }
     @GetMapping(path = "/getUsers")
-    public List<User> getUsers() {
-        return userRepository.findAll();
+    public List<User> getUsers(@RequestParam Integer queueID) {
+        return queueRepository.findById(queueID).orElseThrow().getUsers();
     }
 
-    @PostMapping(path ="/createQueue")
-    public Queue createUser() {
-        Queue queue = new Queue();
-        return queueRepository.save(queue);
-    }
+
 }

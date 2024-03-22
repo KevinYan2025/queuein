@@ -18,15 +18,22 @@ const UserQueue =() => {
                         queueID: params.queueID
                     }
                 });
-                console.log('Queue info:', response.data[0]);
-                setQueueInfo(response.data[0])
+                console.log('Queue info:', response.data);
+                setQueueInfo(response.data);
             } catch (error) {
                 console.error('Error fetching queue:', error);
+                // Optionally: Set some state to indicate error to the user
             }
         };
 
-        fetchQueueInfo();
-    }, [params.queueID]);
+        fetchQueueInfo(); // Fetch initially when component mounts
+
+        const intervalId = setInterval(fetchQueueInfo, 100);
+
+        // Clean up the interval when component unmounts
+        return () => clearInterval(intervalId);
+    }, []); // Empty dependency array
+
     return (
         <div className='rankBoxWapper'>
          <Pin queueID={params.queueID}/>   

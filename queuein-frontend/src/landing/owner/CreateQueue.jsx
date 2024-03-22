@@ -37,7 +37,7 @@ const CreateQueue = () => {
                 onChange={event=>{setUsername(event.target.value)}}
                 />
                 <input 
-                type="password" 
+                type="text" 
                 className="keyinput" 
                 placeholder="Input Queue Name"
                 onChange={event=>{setQueueName(event.target.value)}}

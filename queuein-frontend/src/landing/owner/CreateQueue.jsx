@@ -17,7 +17,7 @@ const CreateQueue = () => {
         })
         .then(response => {
             console.log('Queue created successfully:', response.data.id);
-            navigate(`/userqueue/${response.data.id}`)
+            navigate(`/userqueue/${response.data.id}/${queueName}`)
             
         })
         .catch(error => {

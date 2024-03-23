@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 const UserQueue =() => {
     const params = useParams();
     const [queueInfo,setQueueInfo] = useState('')
+    console.log(queueInfo);
     useEffect(() => {
         const fetchQueueInfo = async () => {
             try {
@@ -36,11 +37,13 @@ const UserQueue =() => {
 
     return (
         <div className='rankBoxWapper'>
-         <Pin queueID={params.queueID}/>   
-        <h1 className="title">Welcome to "queue-name"</h1>
-        <Queue queueInfo={queueInfo}/>
-
-        <User />
+            <Pin queueID={params.queueID}/>
+            <h1 className="title">"{params.queueName}"</h1>
+            <div className="nextPersonButton">
+                <Queue queueInfo={queueInfo}/>
+                <button className='nextbutton'>next</button>
+            </div>
+            <User />
         </div>
     );
 }

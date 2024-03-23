@@ -12,7 +12,7 @@ function App() {
       <Routes>
             <Route path="/hero" element={<Hero/>}/>
             <Route path="/createQueue" element={<CreateQueue/>}/>
-            <Route path="/UserQueue/:queueID" element={<UserQueue/>}/>
+            <Route path="/UserQueue/:queueID/:queueName" element={<UserQueue/>}/>
       </Routes>
         </BrowserRouter>
   )

@@ -20,8 +20,8 @@ const Hero = () => {
       }
     })
     .then(response => {
-      console.log('Joined queue successfully:', response.data.id);
-      navigate(`/userqueue/${response.data.id}`)
+      console.log('Joined queue successfully:', response.data);
+      navigate(`/userqueue/${response.data.id}/${response.data.queueName}`)
     })
     .catch(error => {
       console.error('Error joining queue:', error);

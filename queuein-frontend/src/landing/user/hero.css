@@ -103,3 +103,18 @@ line-height: 30px; /* 83.333% */
   text-align: center;
   margin-top: 5rem;
 }
+.nextbutton{
+  background-color: red;
+  position: absolute;
+  right: 0;
+  bottom: 77%;
+  width: 162px;
+height: 57px;
+flex-shrink: 0;
+border-radius: 100px;
+background: #FB2D2D;
+}
+.nextPersonButton{
+  width: 1000px;
+  position: relative;
+}
